@@ -32,3 +32,5 @@ function lookAndSaySequence(firstElement, n){
   }
   return firstElement;
 }
+
+// or
