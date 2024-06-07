@@ -34,3 +34,24 @@ function lookAndSaySequence(firstElement, n){
 }
 
 // or
+
+function lookAndSaySequence(firstElement, n){
+  let t = n-1;
+  while (t != 0) {
+    let charArray = firstElement.split('');
+    let processed = [];
+    let count = 0;
+  
+    for (i=0; i<charArray.length; i++){
+      let c = charArray[i];
+      count++;
+      if(charArray[i+1]!=c){
+        processed.push(count+c);
+        count = 0;
+      }
+    }
+    firstElement = processed.join('');
+    t--;
+  }
+  return firstElement; 
+}
