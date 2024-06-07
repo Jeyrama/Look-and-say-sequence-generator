@@ -22,3 +22,6 @@ Examples:
 
 Note: "22" is the only element that can keep the series constant.
 */
+
+
+// Solution
