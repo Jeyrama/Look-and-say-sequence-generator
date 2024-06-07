@@ -25,3 +25,10 @@ Note: "22" is the only element that can keep the series constant.
 
 
 // Solution
+
+function lookAndSaySequence(firstElement, n){
+  for(let i=1; i<n; i++){
+    firstElement = firstElement.replace(/(.)\1*/g, (m, g) => m.length + g);
+  }
+  return firstElement;
+}
